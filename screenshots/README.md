@@ -10,7 +10,7 @@ To help review your infrastructure, please include the following screenshots in 
 ## DockerHub showing containers that I have pushed
 ![image](https://user-images.githubusercontent.com/77249754/186338846-9c24b587-d0f1-45e4-8759-f2154eb4529f.png)
 
-## Circeleci SUccefull build
+## Circeleci Scccessful build
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/kabeer-prog/udagram-monolith-microservices-project/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/kabeer-prog/udagram-monolith-microservices-project/tree/master)
 ![image](https://user-images.githubusercontent.com/77249754/186339615-acf8a92c-a4e1-4e24-a58c-688018e04ae7.png)
 
