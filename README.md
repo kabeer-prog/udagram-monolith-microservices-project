@@ -1,3 +1,6 @@
+## Circeleci SUcceful build
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/kabeer-prog/udagram-monolith-microservices-project/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/kabeer-prog/udagram-monolith-microservices-project/tree/master)
+
 # Udagram Image Filtering Application
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
@@ -71,8 +74,8 @@ Launch the frontend app locally.
     ```bash
     ionic serve
     ```
-* You can visit `http://localhost:8100` in your web browser to verify that the application is running. You should see a web interface.
-image.png
+* You can visit`http://localhost:8100` in your web browser to verify that the application is running. You should see a web interface.
+![monolith running](https://user-images.githubusercontent.com/77249754/186337622-b67c42ec-65af-4701-a90b-59069e41bdbb.PNG)
 ## Tips
 1. Take a look at `udagram-api` -- does it look like we can divide it into two modules to be deployed as separate microservices?
 2. The `.dockerignore` file is included for your convenience to not copy `node_modules`. Copying this over into a Docker container might cause issues if your local environment is a different operating system than the Docker image (ex. Windows or MacOS vs. Linux).
@@ -86,4 +89,4 @@ image.png
     ```
 4. `set_env.sh` is really for your backend application. Frontend applications have a different notion of how to store configurations. Configurations for the application endpoints can be configured inside of the `environments/environment.*ts` files.
 5. In `set_env.sh`, environment variables are set with `export $VAR=value`. Setting it this way is not permanent; every time you open a new terminal, you will have to run `set_env.sh` to reconfigure your environment variables. To verify if your environment variable is set, you can check the variable with a command like `echo $POSTGRES_USERNAME`.
-image.png
+![image](https://user-images.githubusercontent.com/77249754/186337540-9b88bf08-fc71-45ab-a842-055bf560c650.png)
