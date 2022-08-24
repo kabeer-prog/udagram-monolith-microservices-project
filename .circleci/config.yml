@@ -20,15 +20,15 @@ jobs:
             node --version => v18.0.0
             sudo apt install nodejs
             echo "--------- The images is Building ------------"
-            docker build -t udagram-api-feed ./udagram-api-feed
-            docker tag udagram-api-feed kabeer275/udagram-project-api-feed:v3
-            docker build -t udagram-api-user ./udagram-project-api-user
-            docker tag udagram-api-user kabeer275/udagram-project-api-user:v3
+            docker build -t udagram-project-api-feed ./udagram-project-api-feed
+            docker tag udagram-project-api-feed kabeer275/udagram-project-api-feed:v3
+            docker build -t udagram-project-api-user ./udagram-project-api-user
+            docker tag udagram-project-api-user kabeer275/udagram-project-api-user:v3
             
-            docker build -t udagram-frontend ./udagram-project-frontend
-            docker tag udagram-frontend kabeer275/udagram-project-frontend:v3
-            docker build -t udagram-reverseproxy ./udagram-project-reverseproxy
-            docker tag udagram-reverseproxy kabeer275/udagram-project-reverseproxy:v3
+            docker build -t udagram-project-frontend ./udagram-project-frontend
+            docker tag udagram-project-frontend kabeer275/udagram-project-frontend:v3
+            docker build -t udagram-project-reverseproxy ./udagram-project-reverseproxy
+            docker tag udagram-project-reverseproxy kabeer275/udagram-project-reverseproxy:v3
             echo "-------- All images succesfully built----------"
             echo " ------- login in to hub--------"
             docker login -u kabeer275 -p $DOCKERPASS
